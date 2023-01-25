@@ -24,12 +24,32 @@ i)	#Selection Sort
 
 
 
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i# write your code here using selection sort
+        for j in range(i+1, len(nums)):
+            if nums[j] < nums[lowest_value_index]:
+                lowest_value_index = j
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 ```
 ii)	#Insertion Sort
 ```
 
+def selection_sort(nums):
+    for i in range(len(nums)):
+        lowest_value_index = i
+        for j in range(i+1, len(nums)):
+            if nums[j] < nums[lowest_value_index]:
+                lowest_value_index = j
+        nums[i], nums[lowest_value_index] = nums[lowest_value_index], nums[i]
 
+list_of_nums = eval(input())
+selection_sort(list_of_nums)
+print(list_of_nums)
 
 
 
@@ -37,7 +57,7 @@ ii)	#Insertion Sort
 ```
 
 ## Output:
-
+![output](./Screenshot_20230125_025350.png)
 
 ## Result:
 Thus the program is written to perform selection sort and insertion sort using python programming.
